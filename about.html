@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #050A30;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0b113d;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        header img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: 135px;
+            margin-top: 1em;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            text-align: justify;
+        }
+
+        h2,
+        h3 {
+            color: aqua;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        #moreInfo {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #toggleButton {
+            background-color: #0a1254;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-size: 16px;
+            margin-bottom: 1em;
+        }
+
+        #toggleButton:hover {
+            background-color: #1c2040;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sayyed Kashif Ali</h1>
+        <img src="me.jpg" alt="Kashif" onclick="toggleInfo()" width="250px">
+        <p>Web Developer</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+
+        <p>Hello! I'm Kashif, a passionate and experienced web developer with a love for turning ideas into digital
+            realities. With a background in Full-Stack Web Development and expertise in Java, I thrive on creating
+            seamless and visually appealing web applications. My journey into the world of coding began [mention your
+            background briefly]. Since then, I have been dedicated to staying at the forefront of technology, constantly
+            expanding my skill set to meet the ever-evolving demands of the digital landscape.</p>
+
+        <p>My approach to development is rooted in a commitment to excellence. I believe in crafting not just
+            functional, but delightful user experiences. Whether it's designing an elegant front-end or optimizing
+            server-side logic, I am driven by the pursuit of perfection. Beyond the lines of code, I am an advocate for
+            collaborative problem-solving. I firmly believe that the best solutions emerge from effective teamwork and
+            open communication.</p>
+
+        <p>When not immersed in coding, you'll find me [mention a hobby or interest]. I thrive on challenges and am
+            always seeking new opportunities to learn and grow. Let's embark on a digital journey together. Explore my
+            portfolio and feel free to reach out—I'm excited to connect with you!</p>
+
+        <button id="toggleButton" onclick="toggleInfo()">More About Me</button>
+
+        <div id="moreInfo">
+            <h3>Additional Information</h3>
+            <p>In 2017, I successfully completed my 10<sup>th</sup> grade education from SMT PA Sodha Marathi High
+                School, Navapur under the Maharashtra State Board of Secondary and Higher Secondary Education. Building
+                on this academic foundation, I enrolled in junior college in Anglo Urdu Junior College, Nandurbar the
+                same year, focusing on the science field to delve into a deeper understanding of scientific principles
+                and explore various disciplines.In 2017, I successfully completed my 12<sup>th</sup> grade education
+                under the Maharashtra State Board of Secondary and Higher Secondary Education. In 2019, I embarked on
+                the next phase of my educational journey, enrolling in the Bachelor of Engineering (B.E.) program with a
+                specialization in Information Technology at SKN Sinhgad Institute of Technology and Science, Lonavala.
+                Over the next four years, I dedicated myself to a comprehensive curriculum, acquiring valuable insights
+                and honing my technical skills. This transformative journey culminated in the successful attainment of
+                my engineering degree from Savitribai Phule Pune University in 2023. From my foundational education
+                under my both previous schools i.e. SMT PA Sodha Marathi High School and Anglo Urdu Junior College to
+                the specialized training at SKN Sinhgad Institute of Technology and Science, each experience has played
+                a crucial role in shaping my academic and professional trajectory.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Contact Me</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #050A30;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0b113d;
+            color: aqua;
+            text-align: center;
+            padding: 1em;
+        }
+
+        header img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: 135px;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            text-align: justify;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0a1254;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1c2040;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sayyed Kashif Ali</h1>
+        <img src="me.jpg" alt="Kashif" onclick="toggleInfo()" width="250px">
+        <p>Contact Me</p>
+    </header>
+
+    <section>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
